@@ -45,4 +45,4 @@ jobs:
             docker pull ovrrtd/portfolio-web:latest &&
             docker stop portfolio-web || true &&
             docker rm portfolio-web || true &&
-            docker run -d --network host --restart unless-stopped -p 3001:3000 --name portfolio-web ovrrtd/portfolio-web:latest
+            docker run -d --network host --restart unless-stopped --name portfolio-web ovrrtd/portfolio-web:latest
