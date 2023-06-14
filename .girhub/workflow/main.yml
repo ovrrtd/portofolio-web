@@ -1,0 +1,46 @@
+name: deployment
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+
+  dockerize:
+    name: Build and Publish Docker
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        name: git pull n checkout
+
+      - name: login to docker Hub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Build & push Docker image
+        run: |
+          docker compose -f deployment/build.yml up
+          docker push ovrrtd/portfolio-web:latest
+
+  deploy:
+    name: Deploy to Digitalocean on development branch push
+    runs-on: ubuntu-latest
+    needs: dockerize
+    steps:
+      - name: git pull n checkout
+        uses: actions/checkout@v2
+
+
+      - name: Install doctl
+        uses: digitalocean/action-doctl@v2
+        with:
+          token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
+          script:
+            docker pull ovrrtd/portfolio-web:latest &&
+            docker stop portfolio-web || true &&
+            docker rm portfolio-web || true &&
+            docker run -d --network host --name portfolio-web ovrrtd/portfolio-web:latest
