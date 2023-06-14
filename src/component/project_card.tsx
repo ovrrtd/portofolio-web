@@ -11,13 +11,13 @@ export function ProjectCard (
                 {description}
             </div>
             <div className="flex flex-row gap-2 font-serif text-sm m-2">
-                <div className="my-auto">
+                <div className="my-1">
                     <StackOverflowIcon size={18}/>
                 </div>
                 <div className="flex flex-row flex-wrap item-start gap-2">
                     {techStack.map((el, index)=> {
                         return (
-                            <p className="px-2 py-1 bg-slate-200 rounded-md text-xs" key={index}>{el}</p>
+                            <p className="px-1 py-1 bg-slate-200 rounded-md text-xs" key={index}>{el}</p>
                         )
                     })}
                 </div>

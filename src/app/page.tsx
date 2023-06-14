@@ -7,12 +7,12 @@ const intro = "A backend developer, and while I may not be the best in the marke
 
 export default function Home() {
   return (
-    <main className="flex-auto min-w-0 md:mt-0 flex flex-col px-2 md:px-0">
+    <main className="flex-auto min-w-0 mt-6 md:mt-0 flex flex-col">
       <h1 className="font-serif text-3xl font-bold mb-2 md:mb-8">Diaz Agfa Nuribi</h1>
       <section className="px-2">
-        <p className="mb-2 font-medium"
-        >{intro}</p>
-        <div className='flex items-start md:items-center md:gap-8 flex-col md:flex-row pt-4'>
+        <p className="mb-2"
+          >{intro}</p>
+        <div className='flex items-start md:items-center gap-2 md:gap-8 flex-row md:flex-row pt-4'>
           <Image
             alt='avatar'
             className='rounded-full grayscale'
@@ -22,7 +22,7 @@ export default function Home() {
             priority
           />
 
-        <div className="mt-8 md:mt-0 ml-0 md:ml-6 space-y-2 dark:text-neutral-400">
+        <div className="mt-4 md:mt-2 ml-2 md:mx-2 space-y-2 md:space-y-4">
           {/* 
           (<a
               rel="noopener noreferrer"
@@ -50,21 +50,21 @@ export default function Home() {
             </a>) 
           */}
 
-          <p className='flex items-center font-serif font-thin gap-2'>
+          <p className='flex items-center font-serif gap-2'>
               <MailIcon size={16}/>diazagfa@gmail.com
             </p>
             <a 
               href="https://github.com/ovrrtd" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className='flex items-center font-serif font-thin gap-2 hover:font-extrabold'>
+              className='flex items-center font-serif gap-2 hover:font-extrabold'>
                 <GitHubIcon size={16}/>ovrrtd
               </a>
             <a 
               href="" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className='flex items-center font-serif font-thin gap-2 hover:font-extrabold'>
+              className='flex items-center font-serif gap-2 hover:font-extrabold'>
                 <LinkedinIcon size={16}/>diazagfa
               </a>
           </div>
