@@ -23,7 +23,7 @@ jobs:
 
       - name: Build & push Docker image
         run: |
-          docker build -t ovrrtd/portfolio-web:latest
+          docker build -t ovrrtd/portfolio-web:latest .
           docker push ovrrtd/portfolio-web:latest
 
   deploy:
