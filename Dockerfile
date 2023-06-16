@@ -21,4 +21,4 @@ COPY --from=builder /app/package.json ./package.json
 
 EXPOSE 3001
 ENV PORT 3001
-CMD ["yarn", "start"]
+CMD ["yarn", "dev"]
