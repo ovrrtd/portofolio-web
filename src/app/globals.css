@@ -10,3 +10,9 @@
 html {
   min-width: 360px;
 }
+
+@layer base{
+  body {
+      @apply dark:bg-zinc-900  bg-white
+  }
+}

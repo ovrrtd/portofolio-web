@@ -29,7 +29,7 @@ export default function Skill() {
         <div className="flex flex-row flex-wrap item-start gap-2 px-2">
                     {skill.map((el, index)=> {
                         return (
-                            <p className="px-2 py-1 my-1 bg-slate-200 hover:bg-slate-400 hover:font-semibold rounded-md text-sm " key={index}>{el}</p>
+                            <p className="px-2 py-1 my-1 bg-slate-200 dark:bg-slate-700 hover:bg-slate-400 hover:font-semibold rounded-md text-sm " key={index}>{el}</p>
                         )
                     })}
                 </div>
