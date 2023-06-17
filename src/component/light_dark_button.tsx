@@ -24,7 +24,7 @@ const LigthDarkBtn = (
 		<div className={className}>
 			{currentTheme === "dark" ? (
 				<SunIcon
-					className="h-10 w-10 cursor-pointer text-yellow-300"
+					className="h-10 w-10 cursor-pointer text-yellow-100"
 					onClick={() => {
 						setTheme("light")
 					}}

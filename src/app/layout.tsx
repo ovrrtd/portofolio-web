@@ -34,8 +34,8 @@ export default function RootLayout({
             {children}
           </main>
           <LigthDarkBtn className='fixed z-90 bottom-10 md:bottom-1/4 right-10 md:right-1/4 p-1 
-            bg-slate-300 dark:bg-slate-500 rounded-full drop-shadow-lg flex 
-            justify-center items-center hover:bg-slate-700 
+            bg-slate-200 dark:bg-slate-700 rounded-full drop-shadow-lg flex 
+            justify-center items-center hover:bg-slate-300 dark:hover:bg-slate-800 
             hover:drop-shadow-2xl hover:animate-bounce duration-300'/>
         </Provider>
       </body>
