@@ -48,13 +48,13 @@ export default function Navbar (){
                       <Link
                         key={path}
                         href={path}
-                        className="transition-all hover:text-neutral-800  flex align-middle"
+                        className="transition-all hover:text-neutral-800 dark:hover:text-slate-300  flex align-middle"
                       >
                         <span className="relative py-1 px-2">
                           {name}
                           {path === pathname ? (
                             <motion.div
-                              className="absolute inset-0 bg-neutral-100 rounded-md z-[-1]"
+                              className="absolute inset-0 bg-neutral-100 dark:bg-gray-800 rounded-md z-[-1]"
                               layoutId="sidebar"
                               transition={{
                                 type: 'spring',

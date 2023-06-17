@@ -5,7 +5,7 @@ export function EducationCard (props:{title : string, date:string, detail:string
     return (
         <div className="pb-2">
             <h1 className="font-serif font-semibold text-lg">{title}</h1>
-            <div className="flex items-start flex-row gap-4 text-xs mx-1 text-gray-700">
+            <div className="flex items-start flex-row gap-4 text-xs mx-1 text-gray-700 dark:text-gray-100">
                 <div className="flex flex-row gap-1">
                     <LocationIcon size={16}/>{location}
                 </div>

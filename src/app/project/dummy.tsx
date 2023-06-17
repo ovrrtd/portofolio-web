@@ -1,6 +1,12 @@
 
 export const dummyProject = [
     {
+        title : "Alterra Advanced Golang Mini Course",
+        description: "Contain every task and project from the mini course.",
+        link: "",
+        techStack: ["typescript",  "rabbitmq", "typeorm", "nestjs", "mysql", "AWS S3", "socketio", "docker", "redis", "axios", "gitlab ci"],
+    },
+    {
         title : "eLOG (eDOT)",
         description: "An online service for renting vehicle and sending goods.",
         link: "",
