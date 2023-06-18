@@ -14,6 +14,7 @@ export default function Project() {
                         title={el.title}
                         description={el.description}
                         techStack={el.techStack}
+                        url={el.url}
                     />
                 )
             })}

@@ -33,7 +33,7 @@ export default function RootLayout({
           <main className="flex-auto min-w-0 mt-0 flex flex-col px-2 md:px-0">
             {children}
           </main>
-          <LigthDarkBtn className='fixed z-90 bottom-10 md:bottom-1/4 right-10 md:right-1/4 p-1 
+          <LigthDarkBtn className='fixed z-90 bottom-10 md:bottom-20 right-10 md:right-1/4 p-1 
             bg-slate-200 dark:bg-slate-700 rounded-full drop-shadow-lg flex 
             justify-center items-center hover:bg-slate-300 dark:hover:bg-slate-800 
             hover:drop-shadow-2xl animate-bounce duration-300'/>
