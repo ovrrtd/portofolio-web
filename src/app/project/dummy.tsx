@@ -2,15 +2,9 @@
 export const dummyProject = [
     {
         title : "Portfolio web",
-        description: "An web based personal portfolio.",
+        description: "A web based personal portfolio.",
         url:["github.com/ovrrtd/portofolio-web"],
         techStack: ["typescript",  "nextjs", "tailwindcss"],
-    },
-    {
-        title : "Alterra Advanced Golang Mini Course",
-        description: "Contain every task and project from the mini course.",
-        url:["github.com/ovrrtd/alterra-agmc"],
-        techStack: ["go",  "echo", "mysql", "docker", "gitlab action", "gorm"],
     },
     {
         title : "eLOG (eDOT)",
@@ -31,10 +25,21 @@ export const dummyProject = [
         techStack: ["go", "chi", "rabbitmq", "mongodb", "firebase", "docker", "gitlab ci", "cron"], 
     },
     {
+        title : "Media Service (eDOT)",
+        description: "A service for handling centralized media file upload.",
+        url:[],
+        techStack: ["go", "chi", "rabbitmq", "mongodb", "AWS S3", "docker", "gitlab ci", "cron"], 
+    },
+    {
         title : "Dating App (eDOT)",
         description: "A dating app online service.",
         url:["play.google.com/store/apps/details?id=com.pmaapp.ehashtag"],
         techStack: ["go", "chi", "mysql", "redis", "docker", "gitlab ci"], 
     },
-
+    {
+        title : "Alterra Advanced Golang Mini Course",
+        description: "Contain every task and project from the mini course.",
+        url:["github.com/ovrrtd/alterra-agmc"],
+        techStack: ["go",  "echo", "mysql", "docker", "github action", "gorm"],
+    },
 ]

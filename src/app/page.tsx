@@ -3,7 +3,7 @@ import avatar from '../../public/avatar.jpg'
 import {GitHubIcon,LinkedinIcon, MailIcon} from "@/component/icons"
 
 
-const intro = "A backend developer, and while I may not be the best in the market, but love to learning new things and always strive to do my best in solving any problem that comes my way."
+const intro = "A software engineer, and while I may not be the best in the market, but love to learning new things and always strive to do my best in solving any problem that comes my way."
 
 export default function Home() {
   return (
