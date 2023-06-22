@@ -61,7 +61,7 @@ export default function Home() {
                 <GitHubIcon size={16}/>ovrrtd
               </a>
             <a 
-              href="" 
+              href="https://linkedin.com/in/diazagfa" 
               target="_blank" 
               rel="noopener noreferrer" 
               className='flex items-center font-serif gap-2 hover:font-extrabold'>

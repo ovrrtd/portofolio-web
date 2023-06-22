@@ -4,7 +4,7 @@ export const dummyEducation = [
     type: "informal",
     location: "Remote",
     date: "February 2021 - June 2021",
-    detail: ["Teacher's Award"],
+    detail: ["Teacher's Award", "Learning frontend, mobile, and backend development using javascript"],
   },
   {
     title: "Department Computer Science and Electronics UGM (S. Si)",
